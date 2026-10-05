@@ -1,5 +1,5 @@
 import sys
-from predictor import predict
+from backend.model.brain_mri.predictor import predict
 
 
 def main():

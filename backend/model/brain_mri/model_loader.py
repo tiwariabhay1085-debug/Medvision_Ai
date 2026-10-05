@@ -13,7 +13,7 @@ def load_model():
 
     # Load config
     config = joblib.load(
-        "D:/MedVision_Ai/backend/weights/brain_mri_config.pkl"
+        "D:/MedVision_Ai/backend/weights/brain_tumer/brain_mri_config.pkl"
     )
 
     # Create model architecture
@@ -29,7 +29,7 @@ def load_model():
     # Load weights
     model.load_state_dict(
         torch.load(
-            "D:/MedVision_Ai/backend/weights/brain_mri_model.pt",
+            "D:/MedVision_Ai/backend/weights/brain_tumer/brain_mri_model.pt",
             map_location=device
         )
     )

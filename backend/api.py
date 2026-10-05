@@ -1,10 +1,9 @@
-
 from fastapi import FastAPI, UploadFile, File, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from PIL import Image, UnidentifiedImageError
 import io
 
-from predictor import predict
+from model.brain_mri.predictor import predict
 
 app = FastAPI(
     title="MedVision AI API",

@@ -3,7 +3,7 @@ from PIL import Image
 import torch
 from torchvision import transforms
 
-from model_loader import load_model
+from model.brain_mri.model_loader import load_model
 
 
 # Load model once when the backend starts
